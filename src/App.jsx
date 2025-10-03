@@ -125,7 +125,7 @@ export default function App() {
    const { user, setUser } = useAuth();
 
    return (
-      <BrowserRouter>
+      <BrowserRouter basename='/login-page-react-router'>
          <Routes>
             <Route path='/login' element={<Login setUser={setUser} />} />
             <Route
